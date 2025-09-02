@@ -375,16 +375,17 @@ footer {
     position: relative;
 }
 
+/* FORÇA ALTURA UNIFORME DAS IMAGENS */
 .slide img {
     width: 100%;
-    height: 420px;
-    object-fit: cover;
+    height: 420px;       /* Altura padrão do desktop */
+    object-fit: cover;   /* Preenche o espaço sem distorcer */
     object-position: top;
     display: block;
     border-radius: 12px;
 }
 
-
+/* Ajuste de texto dentro do slide */
 .slide-texto {
     position: absolute;
     bottom: 30px;
@@ -396,68 +397,35 @@ footer {
     max-width: 60%;
 }
 
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    font-weight: bold;
-    font-size: 22px;
-    padding: 12px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.4);
-    user-select: none;
-    transition: background 0.3s;
-}
-
-.prev:hover,
-.next:hover {
-    background: rgba(0, 0, 0, 0.7);
-}
-
-.prev {
-    left: 15px;
-}
-
-.next {
-    right: 15px;
-}
-
-.dots {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.dot {
-    cursor: pointer;
-    height: 12px;
-    width: 12px;
-    margin: 0 4px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.3s;
-}
-
-.active,
-.dot:hover {
-    background-color: #ff6600;
-}
-
-@media (max-width: 640px) {
+/* ---------- RESPONSIVO ---------- */
+@media (max-width: 768px) {
     .slide img {
-        height: 260px;
+        height: 260px;  /* Altura ajustada para tablet e celular grande */
     }
 
     .slide-texto {
         max-width: 80%;
+        left: 15px;
+        bottom: 20px;
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .slide img {
+        height: 200px;  /* Altura ajustada para celulares pequenos */
+    }
+
+    .slide-texto {
+        max-width: 90%;
         left: 10px;
         bottom: 15px;
         padding: 10px;
+        font-size: 0.8rem;
     }
 }
+
 .sobre {
   max-width: 1200px;
   margin: 40px auto;
