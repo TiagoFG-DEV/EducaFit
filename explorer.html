@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorar Matérias</title>
+    <link rel="stylesheet" href="./css/stylesExplorer.css">
+</head>
+<body>
+    <header>
+        <div class="logo">EducaFit</div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Categorias</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#" data-categoria="Danca">Dança</a></li>
+                        <li><a href="#" data-categoria="Saude">Saúde</a></li>
+                        <li><a href="#" data-categoria="Lazer">Lazer</a></li>
+                        <li><a href="#" data-categoria="Esportes">Esportes</a></li>
+                        <li><a href="#" data-categoria="Cultura">Cultura</a></li>
+                        <li><a href="#" data-categoria="ArtesMarciais">Artes Marciais</a></li>
+                        <li><a href="#" data-categoria="Culinaria">Culinária</a></li>
+                    </ul>
+                </li>
+                <li><a href="explorer.html">Explorar</a></li>
+                <li><a href="index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="top-controls">
+        <div class="pesquisa">
+            <input type="text" id="pesquisar" placeholder="Pesquisar matérias...">
+        </div>
+        <div class="controls-right">
+            <button id="btnMostrarTudo" class="btn-reset">Mostrar tudo</button>
+        </div>
+    </section>
+
+    <main class="materias-container" id="materiasContainer">
+        <a href="#" class="materia-card" data-categoria="Danca" style="background-image: url('./css/img/danca.png')">
+            <h2>Dança</h2>
+        </a>
+        <a href="#" class="materia-card" data-categoria="Saude" style="background-image: url('./css/img/saude.png')">
+            <h2>Alimentação Saudável</h2>
+        </a>
+        <a href="#" class="materia-card" data-categoria="Lazer" style="background-image: url('./css/img/lazer.png')">
+            <h2>Lazer</h2>
+        </a>
+        <a href="#" class="materia-card" data-categoria="Esportes"
+            style="background-image: url('./css/img/esportes.png')">
+            <h2>Esportes</h2>
+        </a>
+        <a href="#" class="materia-card" data-categoria="Cultura"
+            style="background-image: url('./css/img/cultura.png')">
+            <h2>Cultura</h2>
+        </a>
+        <a href="#" class="materia-card" data-categoria="ArtesMarciais"
+            style="background-image: url('./css/img/artesmarciais.png')">
+            <h2>Artes Marciais</h2>
+        </a>
+        <a href="#" class="materia-card" data-categoria="Culinaria"
+            style="background-image: url('./css/img/culinaria.png')">
+            <h2>Culinária</h2>
+        </a>
+    </main>
+    <div class="title1">
+        <h1> Matérias</h1>
+    </div>
+    <section id="listaMaterias" class="lista-materias"></section>
+
+    <script src="./js/scriptsExplorer.js" defer></script>
+</body>
+</html>
