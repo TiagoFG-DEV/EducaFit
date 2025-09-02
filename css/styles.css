@@ -157,6 +157,7 @@ footer {
     max-width: 900px;
     margin: 30px auto;
     padding: 0 15px;
+    margin: 20px;
 }
 
 .titulo-materia {
@@ -498,4 +499,3 @@ footer {
   background-color: #003f80;  /* azul mais escuro no hover */
   transform: translateY(-2px);
 }
-
