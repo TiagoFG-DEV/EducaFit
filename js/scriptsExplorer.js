@@ -47,6 +47,13 @@ const materiaExplorer = [
         tags: ["Artes Marciais", "Saúde", "Cultura"],
         categoria: "ArtesMarciais",
         link: "./materias/artesmarciais1.html"
+    },
+    {
+        titulo: "Educação para o lazer como formação integral",
+        imagem: "./css/img/lazerimg1.png",
+        tags: ["Lazer", "Esportes", "Cultura"],
+        categoria: "Lazer",
+        link: "./materias/lazer1.html"
     }
 ];
 
